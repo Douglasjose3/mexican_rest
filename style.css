@@ -1,0 +1,43 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background-color: brown;
+}
+
+#carousel-fotos {
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar .navbar-brand span {
+    font-size: 70px;
+}
+
+.nav .nav-link.active {
+    background-color: rgb(85, 165, 42);
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav .nav-link, 
+.navbar-brand {
+    color: aliceblue;
+}
+
+.navbar-brand:hover {
+    color: aliceblue;
+}
+
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+}
+
+.section-title {
+    font-family: 'Itim', cursive;
+}
+
+#sobre-o-restaurante {
+    background-color: rgba(165, 42, 42, 0.326);
+}
