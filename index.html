@@ -13,9 +13,9 @@
 </head>
 
 <body>
-    <header class="navbar navbar-expand-lg sticky-top pb-3">
+    <header class="navbar navbar-expand-lg sticky-top pb-3" id="cabecalho">
         <div class="container">
-            <h1 class="navbar-brand" id="#cabecalho"><span>5</span> Tacos & Beers</h1>
+            <h1 class="navbar-brand" ><span>5</span> Tacos & Beers</h1>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -28,19 +28,19 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link fw-bold">
+                        <a href="#eventos" class="nav-link fw-bold">
                             <i class="bi bi-calendar-check me-2"></i>
                             Eventos
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link fw-bold">
+                        <a href="#cardapio" class="nav-link fw-bold">
                             <i class="bi bi-card-heading me-2"></i>
                             Nosso cardápio
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link fw-bold">
+                        <a href="#fale-conosco" class="nav-link fw-bold">
                             <i class="bi bi-chat-left-text me-2"></i>
                             Fale conosco
                         </a>
@@ -50,55 +50,344 @@
         </div>
     </header>
 
-    <div data-bs-spy="scroll" data-bs-target="cabecalho">
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
         <section id="sobre-o-restaurante">
-            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="2000">
-                        <img src="./IMG/tasty-alcohol-drink-cocktail-tequila.jpg" alt="Bebida Mexicana">
+            <div class="container">
+                <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <img src="./IMG/tasty-alcohol-drink-cocktail-tequila.jpg" alt="Bebida Mexicana">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./IMG/sombrero-mexican-food.jpg" alt="Comida Mexicana">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./IMG/mexican-style.jpg" alt="Ambiente Mexicano">
+                        </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="./IMG/sombrero-mexican-food.jpg" alt="Comida Mexicana">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
                     </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="./IMG/mexican-style.jpg" alt="Ambiente Mexicano">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
                 </div>
             </div>
-            <div class="pt-5 pb-5">
+            
+            <div class="pt-5 pb-3">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-5">
-                            <img src="./IMG/restaurant-open-space-new-concept.jpg" class="d-block w-100 rounded" alt="">
+                        <div class="col-md-4">
+                            <img src="./IMG/Restaurante.jpg" class="d-block w-100 rounded" alt="">
                         </div>
-                    <div class="col-md-7">
-                        <h2 class="section-title">Sobre o restaurante</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore laborum a error dolorem debitis quaerat accusamus beatae doloribus, minus veniam voluptatum. Doloribus sequi perferendis quidem ipsum ex quod, labore aliquam?</p>
-                        <h3 class="section-title">Sobre o espaço</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam architecto rem nihil voluptas unde sint iste ipsa ut molestiae commodi aliquid nam atque placeat tempora non ipsam temporibus, voluptatum harum.</p>
-                        <ul>
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                        </ul>
+                        <div class="col-md-6">
+                            <h2 class="section-title">Sobre o restaurante</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore laborum a error dolorem debitis quaerat accusamus beatae doloribus, minus veniam voluptatum. Doloribus sequi perferendis quidem ipsum ex quod, labore aliquam?</p>
+                            <h3 class="section-title">Sobre o espaço</h3>
+                            <p>Lorem ipsum dolor, sit amet cadipisicing elit. Ullam architecto rem nihil voluptas unde sint iste ipsa ut molestiae commodi aliquid nam atque placeat tempora non ipsam temporibus, voluptatum harum.</p>
+                            <ul class="fw-bold mb-5">
+                                <li>Espaço Kids</li>
+                                <li>Área reservada</li>
+                                <li>Staff exclusivo</li>
+                                <li>Decoração temática</li>
+                                <li>Mesas para até 20 pessoas</li>
+                                <li>Cardápio previamente aprovado</li>
+                            </ul>
+                        </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="eventos" class="pt-1 pb-2">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center pb-2 mb-4 mt-4">O que oferecemos</h2>
+                </div>
+                <div class="row ps-2 pe-2">
+                    <div class="col-md-4">
+                        <img src="./IMG/beautiful-mexican-party-decoration.jpg" alt="Decoração mexicana" class="d-block w-100 rounded">
+                        <h3 class="section-title pt-3 text-color">
+                            <i class="bi bi-cake2-fill me-2"></i>
+                            Aniversários
+                        </h3>
+                        <p>Lorem ipsum dolor sit adipisicing elit. Dolore ducimus eligendi dolorem maxime, expedita aspernatur qui dicta? Blanditiis soluta, laudantium, minima delectus tenetur ducimus, itaque deleniti quibusdam nemo nam corrupti.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./IMG/close-up-friends-with-cocktails.jpg" alt="Happy Hour" class="w-100 rounded">
+                        <h3 class="section-title pt-3 text-color">
+                            <i class="bi bi-clock-fill me-2"></i>
+                            Happy Hour
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eaque modi, voluptatibus laudantium autem qui iste eius? Illo illum maiores nobis deserunt voluptatem perspiciatis hic? Magni asperiores illo nobis expedita.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./IMG/christmas-new-year-preparations-company-attractive-happy-young-people-celebrate.jpg" alt="Feliz ano novo" class="w-100 rouned">
+                        <h3 class="section-title pt-3 text-color">
+                            <i class="bi bi-people-fill me-2"></i>
+                            Confraternizações
+                        </h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, a nihil eum nam corporis maiores minima laboriosam iusto quae, quia necessitatibus beatae, voluptatum qui veniam quam ipsa incidunt enim!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cardapio" class="pb-5">
+            <div class="container">
+                <div class="row g-0">
+                    <h2 class="section-title text-center mt-5 mb-4 pb-2">Nosso cardápio</h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-cardapio">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#entradas" class="fw-bold text-start nav-link text-color active">Entradas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#pratos-principais" class="fw-bold text-start nav-link text-color">Pratos principais</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#dinks-alcoolicos" class="fw-bold text-start nav-link text-color">Drinks alcoólicas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#sucos-refrigerantes" class="fw-bold text-start nav-link text-color">Sucos e refrigerantes</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#sobremesas" class="fw-bold text-start nav-link text-color">Sobremesas</button>
+                        </nav>
+                    </aside>
+
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="entradas">
+                                <div class="row">
+                                    <img class="col.md-12 w-100 mb-5" src="./IMG/Entradas.jpg" alt="Foto de comida mexicana vista de cima">
+                                    <h3 class="text-color fw-bold text-center mb-3">Entradas</h3>
+                                    <div class="col-md-6">
+                                        <img class="w-100 rounded" src="./IMG/Tacos.jpg" alt="Tacos">
+                                        <h4 class="fw-bold mt-3">Tacos</h4>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img class="w-100 rounded" src="./IMG/Quesadilla.jpg" alt="Quesadilla">
+                                        <h4 class="fw-bold mt-3">Quesadilla</h4>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img class="w-100 rounded mt-4" src="./IMG/Guacamole.jpg" alt="Guacamole">
+                                        <h4 class="fw-bold mt-3">Guacamole</h4>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img class="w-100 rounded mt-4" src="./IMG/Chilli.jpg" alt="Chilli">
+                                        <h4 class="fw-bold mt-3">Chilli</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane" id="pratos-principais">
+                                <div class="row">
+                                    <img class="col-md-12 w-100 mb-5" src="./img/prato principal conceito.jpg" alt="comida mexicana">
+                                    <h3 class="text-color fw-bold text-center mb-3">Pratos principais</h3>
+                                    <div class="col-md-6 figure">
+                                        <img class="w-100 rounded figure-img" src="./img/pibil.jpeg" alt="chiles en nogada">
+                                        <figcaption class="figure-caption text-end">Conchinita pibil</figcaption>
+                                        <h4 class="fw-bold mt-1">Cochinita pibil</h4>
+                                        <p>carne suína envolvida em folhas de bananeiras com achiote e assadas lentamente em forno de barro. é servida com um peculiar molho de cebola rocha com laranja azeda e pimenta.</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img class="w-100 figure-img rounded" src="./img/top-view-appetizing-pozole-bowl.jpg" alt="comida mexicana">
+                                        <figcaption class="figure-caption text-end">Pozole</figcaption>
+                                        <h4 class="fw-bold mt-1">Pozole</h4>
+                                        <p>carne de porco ao molho de laranja-azeda, cebola roxa e achiote e especiarias, como: canela, cominho, pimenta-preta, vinagre e sal.</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img class="w-100 figure-img mt-4 rounded" src="./img/mexican-food-concept-flat-lay.jpg" alt="">
+                                        <figcaption class="figure-caption text-end">Chiles en nogada</figcaption>
+                                        <h4 class="fw-bold mt-1">Chiles en nogada</h4>
+                                        <p>guisado de carnes (quase sempre de carne suína ou bovina) acompanhado de frutas, acrescentado um molho de nozes que confere seu sabor característico.</p></ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img class="w-100 mt-4 rounded" src="./img/monte seu prato.jpg" alt="comida mexicana com prato vazio no centro">
+                                        <h4 class="fw-bold mt-3">Monte seu prato</h4>
+                                        <ul>
+                                            <li>1 proteína</li>
+                                            <li>3 sides</li>
+                                            <li>1 molho</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="dinks-alcoolicos">
+                                <div class="row">
+                                    <img class="col-md-12 w-100 mb-5" src="./IMG/Bebidas alcoolicas.jpg" alt="Foto conceito de drinks">
+                                    <h3 class="text-color fw-bold text-center mb-3">Drinks alcoólicos</h3>
+                                    <div class="col-md-6">
+                                        <img class="w-100 rouded" src="./IMG/Michelada.jpg" alt="Michelada drink">
+                                        <h4 class="fw-bold mt-3">Michelada</h4>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img class="w-100 rouded" src="./IMG/Pineapple.jpg" alt="Pineaple drink">
+                                        <h4 class="fw-bold mt-3">Pineapple com tequila</h4>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img class="w-100 rouded mt-4" src="./IMG/Gin.jpg" alt="Gin drink">
+                                        <h4 class="fw-bold mt-3">Gin tonica</h4>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img class="w-100 rouded mt-4" src="./IMG/Tequila.jpg" alt="Tequila dink">
+                                        <h4 class="fw-bold mt-3">Tequila</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="sucos-refrigerantes">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img class="d-block w-100 rounded mt-4" src="./img/top-view-detox-water-fresh-juice-bottles-with-tubes-left-side-brown-wooden-background.jpg" alt="sucos">
+                                        <h4 class="fw-bold mt-3">Sucos</h4>
+                                        <ul>
+                                            <li>laranja</li>
+                                            <li>uva</li>
+                                            <li>melancia</li>
+                                            <li>limão</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img class="d-block w-100 rounded mt-4" src="./img/colorful-soda-drinks-macro-shot.jpg" alt="refrigetantes">
+                                        <h4 class="fw-bold mt-3">Refrigetantes</h4>
+                                        <ul>
+                                            <li>coca-cola</li>
+                                            <li>fanta laranja</li>
+                                            <li>guaraná</li>
+                                            <li>sprite</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="sobremesas">
+                                <div class="row">
+                                    <img class="col-md-12 w-100 mb-5" src="./IMG/Sobremesa conceito.jpg" alt="Prato com sobremesas">
+                                    <h3 class="text-color fw-bold text-center mb-3">Sobremesas</h3>
+                                    <div class="col-md-6">
+                                        <img class="w-100 rouded" src="./IMG/Cones com pasta de frutas.jpg" alt="kCones com pasta de frutas">
+                                        <h4 class="fw-bold mt-3">Cones com pasta de frutas</h4>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img class="w-100 rouded" src="./IMG/Bolo com biscoito e creme rustico.jpg" alt="Bolo com biscoito e creme rustico">
+                                        <h4 class="fw-bold mt-3">Bolo com biscoito e creme rustico</h4>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img class="w-100 rouded mt-4" src="./IMG/Waffle com chocolate, banana, morango com sorvete.jpg" alt="Waffle com chocolate, banana, morango com sorvete">
+                                        <h4 class="fw-bold mt-3">Waffle com chocolate, banana, morango e sorvete a sua escolha</h4>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img class="w-100 rouded mt-4" src="./IMG/Pan del muerto.jpg" alt="Pan del muerto">
+                                        <h4 class="fw-bold mt-3">Pan del muerto</h4>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </section>
+
+        <section id="fale-conosco" class="mt-3 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mt-4 mb-4 pb-2">Fale conosco</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <form>
+                            <div>
+                                <label for="nome" class="form-label fw-bold">Nome compeleto:</label>
+                                <input type="text" id="nome" class="form-control" name="nome" required>
+                            </div>
+                            <div>
+                                <label for="email" class="form-label fw-bold mt-4">Seu e-mail:</label>
+                                <input type="email" id="email" class="form-control" name="email" required>
+                            </div>
+                            <div>
+                                <label for="telefone" class="form-label fw-bold mt-4">Número do telefone:</label>
+                                <input type="tel" id="telefone" class="form-control" name="telefone" required>
+                            </div>
+                            <div>
+                                <label for="mensagem" class="form-label fw-bold mt-4">Deixa uma mensagem:</label>
+                                <textarea class="form-control" id="mensagem" name="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn">Enviar</button>
+                        </form>
+                    </div>
+                    
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title text-color ms-5">Nos acompanhe nas redes sociais</h3>
+                            <ul class="social-links">
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-facebook fs-1 text-color ms-5"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-instagram fs-1 text-color"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-twitter-x fs-1 text-color"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class="section-title text-color ms-5 mt-4">
+                                Entre em contato
+                                <i class="bi bi-whatsapp fs-1 ms-2"></i>
+                            </h3>
+                        </div>
+                        <div class="row mt-5 ms-4">
+                            <h3 class="section-title text-color">
+                                Venha nos visitar
+                                <i class="bi bi-geo-alt-fill fs-1 ms-1"></i>
+                            </h3>
+                            <p class="fw-bold">Rua Fica em São Paulo, 666 | Bairro São Paulo | São Paulo-SP</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </div>
 
+    <footer class="pt-3 pb-3 m-0">&copy todos os direitos reservados / 2023</footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./JS/jquery.mask.min.js"></script>
+    <script src="./JS/jquery.validate.min.js"></script>
+    <script src="./JS/messages_pt_BR.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#telefone').mask('(00) 0 0000-0000', {
+            placeholder: '( __ )   _  ____ - ____'
+            });
+        
+            $('form').validade({
+                rules: {
+                    nome: {
+                        required: true
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    telefone: {
+                        required: true
+                    },
+                    mensagem: {
+                        required: true
+                    }
+                }
+            })
+        });
+    </script>
+
 </body>
 </html>

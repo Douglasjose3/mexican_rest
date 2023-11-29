@@ -6,27 +6,30 @@ body {
     background-color: brown;
 }
 
-#carousel-fotos {
-    background-color: rgb(255, 255, 255);
-}
-
 .navbar .navbar-brand span {
     font-size: 70px;
 }
 
-.nav .nav-link.active {
+#sobre-o-restaurante img {
+    display: block;
+    text-align: center;
+}
+
+#cabecalho .nav .nav-link.active {
     background-color: rgb(85, 165, 42);
     color: rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
 }
 
-.nav .nav-link, 
-.navbar-brand {
+#cabecalho .nav .nav-link, 
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
     color: aliceblue;
 }
 
-.navbar-brand:hover {
-    color: aliceblue;
+.navbar-toggler {
+    background-color: rgba(101, 26, 26, 0.461);
 }
 
 .navbar-brand {
@@ -38,6 +41,74 @@ body {
     font-family: 'Itim', cursive;
 }
 
-#sobre-o-restaurante {
-    background-color: rgba(165, 42, 42, 0.326);
+#eventos,
+#fale-conosco {
+    background-color: rgba(234, 21, 21, 0.159);
+}
+
+h2 {
+    font-size: 40px;
+    color: darkgreen;
+    border-bottom: 7px solid rgba(0, 100, 0, 0.837);
+}
+
+.text-color {
+    color: brown;
+}
+
+.nav-cardapio .nav-link.active {
+    background-color: rgb(85, 165, 42);
+    color: aliceblue;
+}
+
+.nav-cardapio .nav-link:hover {
+    color: brown;
+}
+
+.carousel-item img {
+    max-width: 1500px;
+    max-height: 500px;
+    width: auto;
+    height: auto;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+    margin-right: 25px;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+textarea {
+    resize: none;
+    height: 200px;
+}
+
+#fale-conosco button {
+    margin-top: 20px;
+    background-color: brown;
+    color: #fff;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 6px;
+    text-align: center;
+    margin-top: 30px;
 }
