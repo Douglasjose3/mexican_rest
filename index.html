@@ -15,7 +15,7 @@
 <body>
     <header class="navbar navbar-expand-lg sticky-top pb-3" id="cabecalho">
         <div class="container">
-            <h1 class="navbar-brand" ><span>5</span> Tacos & Beers</h1>
+            <h1 class="navbar-brand"><span>5</span> Tacos & Beers</h1>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -86,7 +86,7 @@
                             <img src="./IMG/Restaurante.jpg" class="d-block w-100 rounded" alt="">
                         </div>
                         <div class="col-md-6">
-                            <h2 class="section-title">Sobre o restaurante</h2>
+                            <h2 class="section-title" id="sobre">Sobre o restaurante</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore laborum a error dolorem debitis quaerat accusamus beatae doloribus, minus veniam voluptatum. Doloribus sequi perferendis quidem ipsum ex quod, labore aliquam?</p>
                             <h3 class="section-title">Sobre o espaço</h3>
                             <p>Lorem ipsum dolor, sit amet cadipisicing elit. Ullam architecto rem nihil voluptas unde sint iste ipsa ut molestiae commodi aliquid nam atque placeat tempora non ipsam temporibus, voluptatum harum.</p>
@@ -242,20 +242,20 @@
                                         <img class="d-block w-100 rounded mt-4" src="./img/top-view-detox-water-fresh-juice-bottles-with-tubes-left-side-brown-wooden-background.jpg" alt="sucos">
                                         <h4 class="fw-bold mt-3">Sucos</h4>
                                         <ul>
-                                            <li>laranja</li>
-                                            <li>uva</li>
-                                            <li>melancia</li>
-                                            <li>limão</li>
+                                            <li>Laranja</li>
+                                            <li>Uva</li>
+                                            <li>Melancia</li>
+                                            <li>Limão</li>
                                         </ul>
                                     </div>
                                     <div class="col-md-6">
                                         <img class="d-block w-100 rounded mt-4" src="./img/colorful-soda-drinks-macro-shot.jpg" alt="refrigetantes">
                                         <h4 class="fw-bold mt-3">Refrigetantes</h4>
                                         <ul>
-                                            <li>coca-cola</li>
-                                            <li>fanta laranja</li>
-                                            <li>guaraná</li>
-                                            <li>sprite</li>
+                                            <li>Coca-cola</li>
+                                            <li>Fanta laranja</li>
+                                            <li>Guaraná</li>
+                                            <li>Sprite</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -317,13 +317,13 @@
                         </form>
                     </div>
                     
-                    <div class="col-md-5">
+                    <div class="col-md-5" id="fale">
                         <div class="row">
-                            <h3 class="section-title text-color ms-5">Nos acompanhe nas redes sociais</h3>
+                            <h3 class="section-title text-color">Nos acompanhe nas redes sociais</h3>
                             <ul class="social-links">
                                 <li>
                                     <a href="#">
-                                        <i class="bi bi-facebook fs-1 text-color ms-5"></i>
+                                        <i class="bi bi-facebook fs-1 text-color"></i>
                                     </a>
                                 </li>
                                 <li>
@@ -337,12 +337,12 @@
                                     </a>
                                 </li>
                             </ul>
-                            <h3 class="section-title text-color ms-5 mt-4">
+                            <h3 class="section-title text-color mt-4">
                                 Entre em contato
                                 <i class="bi bi-whatsapp fs-1 ms-2"></i>
                             </h3>
                         </div>
-                        <div class="row mt-5 ms-4">
+                        <div class="row mt-5">
                             <h3 class="section-title text-color">
                                 Venha nos visitar
                                 <i class="bi bi-geo-alt-fill fs-1 ms-1"></i>
@@ -355,7 +355,7 @@
         </section>
     </div>
 
-    <footer class="pt-3 pb-3 m-0">&copy todos os direitos reservados / 2023</footer>
+    <footer class="pt-3 pb-3 m-0">&copy Todos os direitos reservados / 2023</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -364,12 +364,12 @@
     <script src="./JS/messages_pt_BR.js"></script>
 
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             $('#telefone').mask('(00) 0 0000-0000', {
-            placeholder: '( __ )   _  ____ - ____'
+                placeholder: '( __ )   _  ____ - ____'
             });
-        
-            $('form').validade({
+
+            $('form').validate({
                 rules: {
                     nome: {
                         required: true
@@ -385,7 +385,7 @@
                         required: true
                     }
                 }
-            })
+            });
         });
     </script>
 
