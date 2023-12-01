@@ -127,6 +127,10 @@ footer {
         display: none;
     }
 
+    #sobre-o-restaurante button {
+        display: none;
+    }
+
     img {
         margin-top: 20px;
     }
@@ -146,5 +150,13 @@ footer {
     #fale {
         margin-top: 40px;
         padding-left: 13px;
+    }
+
+    #cardapio .sobremesas  {
+        margin-bottom: 40px;
+    }
+
+    #sucos-refrigerantes {
+        margin-top: -24px;
     }
 }
